@@ -11,9 +11,10 @@ import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { PostComponent } from './posts/post/post.component';
 
 @NgModule({
-  declarations: [AppComponent, PostCreateComponent, HeaderComponent, PostListComponent],
+  declarations: [AppComponent, PostCreateComponent, HeaderComponent, PostListComponent, PostComponent],
   imports: [
     BrowserModule,
     FormsModule,
