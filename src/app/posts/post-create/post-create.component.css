@@ -1,11 +1,11 @@
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
 
-mat-card{
+mat-card {
   width: 80%;
-  margin: auto;
+  margin: 30px auto;
 }
 
 mat-form-field,
-textarea{
+textarea {
   width: 100%;
 }

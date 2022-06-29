@@ -1,0 +1,13 @@
+<div class="post-list" *ngFor="let item of posts; index as i">
+  <div class="post">
+    <button type="button" class="collapsible" (click)="displayCollapsible(i)">
+      {{ item.title }}
+    </button>
+
+    <div class="content" [ngClass]="active ? 'active' : 'not-active'">
+      <div>
+        {{ item.content }}
+      </div>
+    </div>
+  </div>
+</div>
