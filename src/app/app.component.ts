@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 
+import { Post } from './posts/post.model';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  storedPosts: { title: string; content: string; active: boolean }[] = [];
+  title = 'mean-coure';
+
+  storedPosts: Post[] = [];
 
   onPostAdded(post: { title: string; content: string; active: boolean }) {
     this.storedPosts.push(post);
