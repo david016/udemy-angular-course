@@ -24,7 +24,7 @@
 //   }
 // }
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-post-list',
@@ -32,22 +32,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-list.component.css'],
 })
 export class PostListComponent implements OnInit {
-  posts: any = [
-    {
-      title: 'First Post',
-      content: "This is the first post's content",
-      active: false,
-    },
-    {
-      title: 'Second Post',
-      content: "This is the second post's content",
-      active: false,
-    },
-    {
-      title: 'Third Post',
-      content: "This is the third post's content",
-      active: false,
-    },
+  @Input() posts: { title: string; content: string; active: boolean }[] = [
+    // {
+    //   title: 'First Post',
+    //   content: "This is the first post's content",
+    //   active: false,
+    // },
+    // {
+    //   title: 'Second Post',
+    //   content: "This is the second post's content",
+    //   active: false,
+    // },
+    // {
+    //   title: 'Third Post',
+    //   content: "This is the third post's content",
+    //   active: false,
+    // },
   ];
   // posts = [];
 
