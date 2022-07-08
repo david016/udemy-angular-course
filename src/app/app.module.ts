@@ -1,3 +1,4 @@
+// import { PostsService } from './posts/posts.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -30,6 +31,7 @@ import { PostComponent } from './posts/post/post.component';
     MatButtonModule,
     MatToolbarModule,
   ],
+  // providers: [PostsService],
   providers: [],
   bootstrap: [AppComponent],
 })
