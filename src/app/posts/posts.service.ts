@@ -16,6 +16,7 @@ export class PostsService {
   }
 
   getPostUpdatedListener() {
+    let a = this.postsUpdated.asObservable();
     return this.postsUpdated.asObservable();
   }
 
